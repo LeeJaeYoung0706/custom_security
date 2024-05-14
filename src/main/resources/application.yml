@@ -1,0 +1,16 @@
+
+
+---
+
+#spring.config.activate.on-profile:common
+
+spring:
+  jwt:
+    header: Authorization
+    secret: ZXJzdFJlc3RBUElBcHBsaWNhdGlvbg==
+  custom-security:
+    client-id: Newws_toy_project_make_by_ljy_sbc
+    client-secret: Newws_toy_project
+    aes:
+      key: 0123456789abcdef0123456789abcdef
+

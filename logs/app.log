@@ -1,0 +1,194 @@
+2024-05-14 14:43:01 [main] INFO  n.authorization.ServiceApplication - Starting ServiceApplication using Java 17.0.8 with PID 13644 (C:\Users\qaz77\Desktop\authorization\authorization\build\classes\java\main started by qaz7755 in C:\Users\qaz77\Desktop\authorization\authorization)
+2024-05-14 14:43:01 [main] INFO  n.authorization.ServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 14:43:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-14 14:43:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14 14:43:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 14:43:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14 14:43:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 14:43:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 662 ms
+2024-05-14 14:43:02 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientInfo': Injection of autowired dependencies failed
+2024-05-14 14:43:02 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-14 14:43:02 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-14 14:43:02 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientInfo': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at newws.authorization.ServiceApplication.main(ServiceApplication.java:10)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.custom-security.client-id' in value "${spring.custom-security.client-id}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:953)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	... 17 common frames omitted
+2024-05-14 14:43:24 [main] INFO  n.authorization.ServiceApplication - Starting ServiceApplication using Java 17.0.8 with PID 2428 (C:\Users\qaz77\Desktop\authorization\authorization\build\classes\java\main started by qaz7755 in C:\Users\qaz77\Desktop\authorization\authorization)
+2024-05-14 14:43:24 [main] INFO  n.authorization.ServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 14:43:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-14 14:43:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14 14:43:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 14:43:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14 14:43:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 14:43:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 558 ms
+2024-05-14 14:43:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-14 14:43:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-14 14:43:25 [main] INFO  n.authorization.ServiceApplication - Started ServiceApplication in 1.248 seconds (process running for 1.595)
+2024-05-14 14:43:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 14:43:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 14:43:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-14 14:43:54 [main] INFO  n.authorization.ServiceApplication - Starting ServiceApplication using Java 17.0.8 with PID 12716 (C:\Users\qaz77\Desktop\authorization\authorization\build\classes\java\main started by qaz7755 in C:\Users\qaz77\Desktop\authorization\authorization)
+2024-05-14 14:43:54 [main] INFO  n.authorization.ServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 14:43:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-14 14:43:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14 14:43:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 14:43:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14 14:43:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 14:43:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 533 ms
+2024-05-14 14:43:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-14 14:43:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-14 14:43:54 [main] INFO  n.authorization.ServiceApplication - Started ServiceApplication in 1.124 seconds (process running for 1.461)
+2024-05-14 14:43:57 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 14:43:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 14:43:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-14 14:43:57 [http-nio-8080-exec-1] INFO  n.a.s.filter.SecurityJwtFilter - test
+2024-05-14 14:44:42 [main] INFO  n.authorization.ServiceApplication - Starting ServiceApplication using Java 17.0.8 with PID 14972 (C:\Users\qaz77\Desktop\authorization\authorization\build\classes\java\main started by qaz7755 in C:\Users\qaz77\Desktop\authorization\authorization)
+2024-05-14 14:44:42 [main] INFO  n.authorization.ServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 14:44:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-14 14:44:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14 14:44:43 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 14:44:43 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14 14:44:43 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 14:44:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 598 ms
+2024-05-14 14:44:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-14 14:44:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-14 14:44:43 [main] INFO  n.authorization.ServiceApplication - Started ServiceApplication in 1.207 seconds (process running for 1.558)
+2024-05-14 14:44:46 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 14:44:46 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 14:44:46 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-14 14:44:46 [http-nio-8080-exec-2] INFO  n.a.s.filter.SecurityJwtFilter - test
+2024-05-14 16:18:27 [main] INFO  n.authorization.ServiceApplication - Starting ServiceApplication using Java 17.0.8 with PID 16552 (C:\Users\qaz77\Desktop\authorization\authorization\build\classes\java\main started by qaz7755 in C:\Users\qaz77\Desktop\authorization\authorization)
+2024-05-14 16:18:27 [main] INFO  n.authorization.ServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 16:18:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-14 16:18:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14 16:18:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 16:18:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14 16:18:28 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 16:18:28 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 573 ms
+2024-05-14 16:18:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-14 16:18:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-14 16:18:28 [main] INFO  n.authorization.ServiceApplication - Started ServiceApplication in 1.229 seconds (process running for 1.588)
+2024-05-14 16:18:31 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 16:18:31 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 16:18:31 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-14 16:18:31 [http-nio-8080-exec-1] INFO  n.a.s.filter.SecurityJwtFilter - test
+2024-05-14 16:22:24 [main] INFO  n.authorization.ServiceApplication - Starting ServiceApplication using Java 17.0.8 with PID 13748 (C:\Users\qaz77\Desktop\authorization\authorization\build\classes\java\main started by qaz7755 in C:\Users\qaz77\Desktop\authorization\authorization)
+2024-05-14 16:22:24 [main] INFO  n.authorization.ServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 16:22:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-14 16:22:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14 16:22:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 16:22:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14 16:22:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 16:22:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 594 ms
+2024-05-14 16:22:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-14 16:22:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-14 16:22:25 [main] INFO  n.authorization.ServiceApplication - Started ServiceApplication in 1.249 seconds (process running for 1.615)
+2024-05-14 16:22:29 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 16:22:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 16:22:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-14 16:22:29 [http-nio-8080-exec-1] INFO  n.a.s.filter.SecurityJwtFilter - test
+2024-05-14 16:22:29 [http-nio-8080-exec-1] INFO  n.a.s.filter.SecurityJwtFilter - test
+2024-05-14 16:22:31 [http-nio-8080-exec-3] INFO  n.a.s.filter.SecurityJwtFilter - test
+2024-05-14 16:22:31 [http-nio-8080-exec-3] INFO  n.a.s.filter.SecurityJwtFilter - test
+2024-05-14 17:22:46 [main] INFO  n.authorization.ServiceApplication - Starting ServiceApplication using Java 17.0.8 with PID 1748 (C:\Users\qaz77\Desktop\authorization\authorization\build\classes\java\main started by qaz7755 in C:\Users\qaz77\Desktop\authorization\authorization)
+2024-05-14 17:22:46 [main] INFO  n.authorization.ServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 17:22:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-14 17:22:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14 17:22:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 17:22:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14 17:22:47 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 17:22:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 556 ms
+2024-05-14 17:22:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-14 17:22:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-14 17:22:47 [main] INFO  n.authorization.ServiceApplication - Started ServiceApplication in 1.148 seconds (process running for 1.501)
+2024-05-14 17:22:52 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 17:22:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 17:22:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-14 17:23:39 [main] INFO  n.authorization.ServiceApplication - Starting ServiceApplication using Java 17.0.8 with PID 9308 (C:\Users\qaz77\Desktop\authorization\authorization\build\classes\java\main started by qaz7755 in C:\Users\qaz77\Desktop\authorization\authorization)
+2024-05-14 17:23:39 [main] INFO  n.authorization.ServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 17:23:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-14 17:23:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14 17:23:40 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 17:23:40 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14 17:23:40 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 17:23:40 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 557 ms
+2024-05-14 17:23:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-14 17:23:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-14 17:23:40 [main] INFO  n.authorization.ServiceApplication - Started ServiceApplication in 1.146 seconds (process running for 1.488)
+2024-05-14 17:23:42 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 17:23:42 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 17:23:42 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-05-14 17:23:50 [main] INFO  n.authorization.ServiceApplication - Starting ServiceApplication using Java 17.0.8 with PID 17488 (C:\Users\qaz77\Desktop\authorization\authorization\build\classes\java\main started by qaz7755 in C:\Users\qaz77\Desktop\authorization\authorization)
+2024-05-14 17:23:50 [main] INFO  n.authorization.ServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 17:23:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-14 17:23:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14 17:23:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 17:23:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14 17:23:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 17:23:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 549 ms
+2024-05-14 17:23:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-14 17:23:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-14 17:23:50 [main] INFO  n.authorization.ServiceApplication - Started ServiceApplication in 1.157 seconds (process running for 1.515)
+2024-05-14 17:23:53 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 17:23:53 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 17:23:53 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-14 17:25:09 [main] INFO  n.authorization.ServiceApplication - Starting ServiceApplication using Java 17.0.8 with PID 12128 (C:\Users\qaz77\Desktop\authorization\authorization\build\classes\java\main started by qaz7755 in C:\Users\qaz77\Desktop\authorization\authorization)
+2024-05-14 17:25:09 [main] INFO  n.authorization.ServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 17:25:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-14 17:25:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14 17:25:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 17:25:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14 17:25:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 17:25:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 561 ms
+2024-05-14 17:25:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-14 17:25:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-14 17:25:10 [main] INFO  n.authorization.ServiceApplication - Started ServiceApplication in 1.179 seconds (process running for 1.545)
+2024-05-14 17:25:13 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 17:25:13 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 17:25:13 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-14 17:26:07 [main] INFO  n.authorization.ServiceApplication - Starting ServiceApplication using Java 17.0.8 with PID 5784 (C:\Users\qaz77\Desktop\authorization\authorization\build\classes\java\main started by qaz7755 in C:\Users\qaz77\Desktop\authorization\authorization)
+2024-05-14 17:26:07 [main] INFO  n.authorization.ServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 17:26:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-14 17:26:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14 17:26:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14 17:26:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14 17:26:08 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14 17:26:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 569 ms
+2024-05-14 17:26:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-14 17:26:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-14 17:26:08 [main] INFO  n.authorization.ServiceApplication - Started ServiceApplication in 1.19 seconds (process running for 1.563)
+2024-05-14 17:26:11 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14 17:26:11 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14 17:26:11 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
